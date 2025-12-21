@@ -755,3 +755,131 @@ section {
         padding: 25px;
     }
 }
+
+/* ---------------------------------- */
+/* Case Study Pages */
+/* ---------------------------------- */
+.case-overview {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Quick Info bar for case studies */
+.quick-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.quick-info .item {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99,102,241,0.12);
+    color: var(--text-secondary);
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.quick-info .item strong {
+    color: var(--accent-color);
+    min-width: 80px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .quick-info { gap: 8px; }
+    .quick-info .item { font-size: 0.9rem; padding: 8px 10px; }
+}
+
+.case-overview.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.case-overview h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.case-overview h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.case-overview .project-tags {
+    margin: 12px 0 24px 0;
+}
+
+.case-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.case-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: zoom-in;
+    box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.case-gallery img:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(2,6,23,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 95%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+
+.lightbox .close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: rgba(255,255,255,0.06);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .case-gallery img { height: 140px; }
+}
+
+@media (max-width: 480px) {
+    .case-overview { padding: 24px 12px; }
+}

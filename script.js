@@ -32,7 +32,7 @@ navLinks.forEach(link => {
 
 // Typing Effect
 const typedTextSpan = document.querySelector('.typed-text');
-const textArray = ['Full Stack Developer', 'Web Designer', 'Problem Solver', 'Creative Thinker'];
+const textArray = ['XR Developer', 'Digital Twin Engineer', '3D Visualization Specialist', 'Unity Developer', 'Blender Plugin Author'];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;

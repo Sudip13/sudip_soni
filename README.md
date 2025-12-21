@@ -1,14 +1,14 @@
-# Sudip Soni - Portfolio Website
+# Sudip Soni - XR Developer Portfolio
 
-A modern, responsive portfolio website showcasing my skills, projects, and professional experience.
+A modern, responsive portfolio website showcasing XR, digital twin, and 3D visualization work.
 
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
-- **Modern UI/UX**: Clean and professional design with smooth animations
+- **XR & Digital Twin Focus**: Showcase XR experiences, digital twin visualizations, and e-learning modules
 - **Interactive Elements**: Typing effect, smooth scrolling, and hover animations
-- **Project Showcase**: Display your best work with images and descriptions
-- **Contact Form**: Easy way for visitors to get in touch
+- **Project Showcase**: Display immersive projects with images, descriptions, and tech tags
+- **Contact Form**: Easy way for visitors or collaborators to get in touch
 - **Social Links**: Connect on GitHub, LinkedIn, Twitter, and Email
 
 ## 🚀 Quick Start
@@ -52,7 +52,7 @@ portfolio/
 In `index.html`, find and replace:
 
 - **Name**: Search for "Sudip Soni" and replace with your name
-- **Title**: Update the typing animation text in `script.js` (line 25)
+- **Title**: Update the typing animation text in `script.js` (see `textArray`)
 - **Description**: Update the hero description and about section
 - **Contact Info**: Update email, phone, location in the contact section
 
@@ -108,7 +108,7 @@ In `styles.css`, update the CSS variables at the top:
 Customize the typing animation by editing the `textArray` in `script.js`:
 
 ```javascript
-const textArray = ['Full Stack Developer', 'Web Designer', 'Problem Solver'];
+const textArray = ['XR Developer', 'Digital Twin Engineer', '3D Visualization Specialist'];
 ```
 
 ### Animation Speed
@@ -126,6 +126,16 @@ To add a new section:
 2. Add corresponding styles in `styles.css`
 3. Add navigation link in the navbar
 4. The smooth scroll will work automatically
+
+## Case Studies
+
+This site includes dedicated case-study pages for featured projects. You can add or edit the case studies in the `projects/` folder:
+
+- `projects/digital-twin.html` — Real-time Digital Twin case study
+- `projects/xr-training.html` — XR Training Simulator case study
+- `projects/blender-plugin.html` — Blender Automation Plugin case study
+
+Each case study contains an overview, role, tech stack, gallery and outcomes. Replace images in `assets/` (e.g., `project1.jpg`, `project2.jpg`, `project3.jpg`) with your real screenshots and update copy as needed.
 
 ## 🌐 Deployment
 

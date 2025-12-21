@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Asset Optimizer — Case Study | Sudip Soni</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../projects/project-style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">Sudip<span>Soni</span></a>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link" onclick="if (document.referrer) { history.back(); } else { window.location = '../index.html'; } return false;">Back to Projects</a></li>
+          <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:120px;">
+    <section class="case-overview">
+      <div class="project-page">
+        <header>
+            <h1 class="project-title">Game Asset Optimizer</h1>
+            <div class="quick-info">
+              <div class="item"><strong>Role</strong><span>Developer & Author</span></div>
+              <div class="item"><strong>Tech</strong><span>Blender 4.2+, Python API, Mesh Optimization</span></div>
+            </div>
+            <hr class="divider">
+        </header>
+
+        <main class="content-grid">
+            <section class="visuals">
+                <div class="main-image">
+                    <!-- Video shown as main by default if available -->
+                    <video id="mainVideo" controls poster="../assets/Image1.png" style="display:block;">
+                        <source src="../assets/LOD Generator.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img id="mainMedia" src="../assets/Image1.png" alt="Game Asset Optimizer interface" loading="lazy" style="display:none;" />
+                </div>
+                <div class="thumbnail-row">
+                    <div class="thumb video-thumb" role="button" tabindex="0" data-video="../assets/LOD Generator.mp4" data-poster="../assets/Image1.png">
+                        <img src="../assets/Image1.png" alt="Plugin demo video" loading="lazy">
+                    </div>
+                    <div class="thumb" role="button" tabindex="0"><img src="../assets/LOD0.png" alt="LOD generation" loading="lazy"></div>
+                    <div class="thumb" role="button" tabindex="0"><img src="../assets/generate LOD.png" alt="Batch optimization" loading="lazy"></div>
+                    <div class="thumb" role="button" tabindex="0"><img src="../assets/auto decimate mesh.png" alt="UV unwrap" loading="lazy"></div>
+                </div>
+            </section>
+
+            <section class="details">
+                <div class="section-group">
+                    <h3>Description</h3>
+                    <p>Complete optimization toolkit for game engines featuring mesh decimation, LOD generation, dual UV unwrapping, and batch optimization presets. Automates LOD generation, handles dual UV systems (texture + lightmap), and includes smart decimation algorithms with quality preservation for game developers, VR creators, and CAD workflows.</p>
+                </div>
+
+                <div class="section-group">
+                    <h3>Outcome</h3>
+                    <p>Reduced asset prep time by 40-60% for Unity/Unreal pipelines with 1,149+ downloads and 5.0 rating on Blender Extensions. Streamlined CAD-to-game-engine workflows with automated cleanup and adopted by game developers and VR creators for production pipelines.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div style="display:flex;gap:12px;margin-bottom:16px;">
+                <a href="https://extensions.blender.org/add-ons/asset-optimizer/" class="btn btn-primary" target="_blank" rel="noopener">View on Blender Extensions</a>
+                <a href="https://github.com/Sudip13/AssetOptimizer" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+            <a href="../index.html" class="btn btn-secondary" onclick="if (document.referrer) { history.back(); } else { window.location = '../index.html'; } return false;">Back</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Sudip Soni. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+</body>
+</html>
