@@ -132,7 +132,7 @@ To add a new section:
 This site includes dedicated case-study pages for featured projects. You can add or edit the case studies in the `projects/` folder:
 
 - `projects/digital-twin.html` — Real-time Digital Twin case study
-- `projects/xr-training.html` — XR Training Simulator case study
+- `projects/powder-handling-plant-vr-tour.html` — Powder Handling Plant VR Tour case study
 - `projects/blender-plugin.html` — Blender Automation Plugin case study
 
 Each case study contains an overview, role, tech stack, gallery and outcomes. Replace images in `assets/` (e.g., `project1.jpg`, `project2.jpg`, `project3.jpg`) with your real screenshots and update copy as needed.

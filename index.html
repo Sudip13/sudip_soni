@@ -31,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" id="vanta-bg">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
@@ -217,19 +217,19 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/project2.jpg" alt="XR Training Simulator">
+                        <img src="assets/PH1.png" alt="Powder Handling Plant VR Tour">
                         <div class="project-overlay">
-                            <a href="projects/xr-training.html" class="project-link" title="Case Study"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="projects/powder-handling-plant-vr-tour.html" class="project-link" title="Case Study"><i class="fas fa-external-link-alt"></i></a>
                             <a href="#" class="project-link" title="Repository"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>XR Training Simulator</h3>
-                        <p>Immersive AR/VR training module for technical e-learning with interactive tasks, performance analytics, and multi-user scenarios.</p>
+                        <h3>Powder Handling Plant VR Tour</h3>
+                        <p>Immersive VR walkthrough of a powder handling facility with custom X-Ray Vision feature to visualize internal machinery and processes in real-time.</p>
                         <div class="project-tags">
-                            <span>XR</span>
+                            <span>VR</span>
                             <span>Unity</span>
-                            <span>e-Learning</span>
+                            <span>Digital Twin</span>
                         </div>
                     </div>
                 </div>
@@ -323,6 +323,26 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+        VANTA.DOTS({
+            el: ".hero",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x6366f1,
+            color2: 0x818cf8,
+            backgroundColor: 0x020617,
+            size: 3.00,
+            spacing: 25.00,
+            showLines: false
+        })
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
