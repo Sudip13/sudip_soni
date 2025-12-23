@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BESS Assembly Line VR Digital Twin — Case Study | Sudip Soni</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../projects/project-style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="logo">Sudip<span>Soni</span></a>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link" onclick="if (document.referrer) { history.back(); } else { window.location = '../index.html'; } return false;">Back to Projects</a></li>
+          <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:120px;">
+    <section class="case-overview">
+      <div class="project-page">
+        <header>
+            <h1 class="project-title">BESS Assembly Line VR Digital Twin</h1>
+            <div class="quick-info">
+              <div class="item"><strong>Role</strong><span>Unity Developer & 3D Artist</span></div>
+              <div class="item"><strong>Tech</strong><span>Unity (URP), XR Interaction Toolkit, Meta Quest, Blender, Substance Painter</span></div>
+            </div>
+            <hr class="divider">
+        </header>
+
+        <main class="content-grid">
+            <section class="visuals">
+                <div class="main-image">
+                    <img id="mainMedia" src="../assets/factorytoor2.png" alt="BESS Assembly Line VR Digital Twin" loading="lazy" />
+                </div>
+                <div class="thumbnail-row">
+                    <div class="thumb" role="button" tabindex="0"><img src="../assets/factorytoor2.png" alt="Assembly overview" loading="lazy"></div>
+                    <div class="thumb" role="button" tabindex="0"><img src="../assets/factorytoor1.png" alt="Component breakdown" loading="lazy"></div>
+                </div>
+            </section>
+
+            <section class="details">
+                <div class="section-group">
+                    <h3>Description</h3>
+                    <p>This project is a high-fidelity Digital Twin concept designed to showcase a Battery Energy Storage Solution (BESS) assembly plant to stakeholders before physical construction begins. Built using the Unity URP render pipeline, the tour allows users to explore the full assembly lifecycle—from individual battery packs to the final container integration—based on engineering layouts and reference data.</p>
+                    <p>To address the challenge of running a complex industrial environment on standalone Meta Quest hardware, I developed a fully optimized asset pipeline utilizing LODs (Levels of Detail) and efficient texturing workflows in Substance Painter. Each assembly station features interactive Teleport Points where users can trigger a breakdown of components being installed, accompanied by synchronized voiceover explanations to demonstrate specific Standard Operating Procedures (SOPs).</p>
+                </div>
+
+                <div class="section-group">
+                    <h3>Outcome</h3>
+                    <p><strong>Stakeholder Visualization:</strong> Successfully provided a pre-setup immersive tour that allowed investors and stakeholders to validate the plant layout and assembly flow virtually.</p>
+                    <p><strong>Standalone Performance:</strong> Achieved smooth, high-frame-rate performance on Meta Quest devices through aggressive mesh optimization and LOD management in Blender.</p>
+                    <p><strong>Interactive SOP Training:</strong> Created an educational framework using the XR Interaction Toolkit that effectively communicates complex assembly steps through visual cues and audio guidance.</p>
+                    <p><strong>High-Fidelity Real-time Visuals:</strong> Leveraged the URP pipeline to balance visual quality with performance, ensuring realistic lighting and material representation for industrial components.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="../index.html" class="btn btn-secondary" onclick="if (document.referrer) { history.back(); } else { window.location = '../index.html'; } return false;">Back</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Sudip Soni. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+</body>
+</html>
