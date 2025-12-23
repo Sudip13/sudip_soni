@@ -393,9 +393,120 @@ section {
     font-size: 1.2rem;
 }
 
+/* Industrial XR Stack Section */
+.tech-stack {
+    background: var(--dark-bg);
+    position: relative;
+}
+
+.stack-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: -30px auto 50px;
+    max-width: 700px;
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stack-category {
+    background: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    transition: var(--transition);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.stack-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.stack-category:hover::before {
+    transform: scaleX(1);
+}
+
+.stack-category:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+}
+
+.stack-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.stack-category:hover .stack-icon {
+    transform: rotateY(360deg);
+}
+
+.stack-category h3 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.stack-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.tech-badge {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent-color);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    transition: var(--transition);
+}
+
+.tech-badge:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+    border-color: var(--primary-color);
+}
+
+.stack-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
 /* Skills Section */
 .skills {
-    background: var(--dark-bg);
+    background: var(--light-bg);
 }
 
 .skills-grid {
