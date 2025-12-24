@@ -836,6 +836,38 @@ section {
 
     .about-content {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .about-info {
+        margin: 20px 0;
+    }
+
+    .info-item {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     .contact-content {
